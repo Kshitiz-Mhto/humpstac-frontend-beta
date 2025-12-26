@@ -8,6 +8,7 @@ import Features from './components/Features';
 import Footer from './components/Footer';
 import BeReady from './components/BeReady';
 import Values from './components/Values';
+import WorkingMechanism from './components/WorkingMechanism';
 
 function App() {
   // Simple intersection observer to add reveal classes on scroll
@@ -41,6 +42,10 @@ function App() {
 
         <div className="reveal">
           <Values />
+        </div>
+
+        <div className="reveal">
+          <WorkingMechanism />
         </div>
 
         <div className="reveal">
