@@ -26,12 +26,12 @@ const Features: React.FC = () => {
     },
     {
       title: "Expert in the Loop",
-      desc: "Curated domain experts verify complex samples to reach 99%+ precision.",
+      desc: "Curated domain experts verify complex samples and improve learning models to reach 99%+ precision.",
       icon: <UserCheck className="w-8 h-8 text-[#0CC1E0]" />
     },
     {
       title: "Synthetic Data Generation",
-      desc: "Creates realistic artificial data to expand datasets and improve model training without extra data collection.",
+      desc: "Generates realistic artificial datasets to augment training data and improve model performance without additional data collection.",
       icon: <Cpu className="w-8 h-8 text-[#0CC1E0]" />
     }
 
