@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
           <div>
             <h5 className="font-bold text-slate-900 mb-6 uppercase text-xs tracking-widest">Contributors</h5>
             <ul className="space-y-4 text-sm text-slate-500 font-medium">
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Join Platform</a></li>
+              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Join as Contributor</a></li>
               <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">View Earnings</a></li>
               <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">My Submissions</a></li>
             </ul>
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-sm text-slate-500 font-medium">
               <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Browse Datasets</a></li>
               <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Custom Datasets</a></li>
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Book a Demo</a></li>
+              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Book a Meeting</a></li>
             </ul>
           </div>
 
