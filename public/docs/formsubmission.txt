@@ -1,0 +1,37 @@
+1. What problem is your team most eager to tackle through Code for Impact? 
+Pick one or more focus sectors — tourism, health, agriculture, education, finance, or digital commerce — and describe a specific challenge. 
+-> Nepal's SMBs and AI teams lack affordable, localized multimodal, premium training data for thier AI/ML model, for example health multi-lingual(language) assistant/chatbot, rural audio for education tutors, diverse imagery fo tourism, and so on. This causes 500+ Nepali AI based startups or business that poses own AI models, across different sectors education, health, commerce, tourism from building pratical, accurate AI/ML system that an handle diverse conditions and wont collapse in new condition. It will impact millions of Nepalis health workers, students, tutors, farmers, shopkeepers who need context-aware AI tool now to boost thier productivity and efficiency, in Nepal's $680M underserved data market share. 
+
+2. Please explain your proposed idea or solution to the stated problem. 
+-> Our Project "humpStac", Ready-to-Train Data as a Service - provide a two sided marketplace delivering multimodal(text, audio, tabular,video,images) rights-cleared premium trainable dataset. We will be providing:
+    a. Marketplace(buyers + Contributors)
+    Two sided hub where AI teams / small to medium scale businesses (SMBs) can post custom campaigns for need of specific type of data or buy ready-made ready-to-train datasets. While contributors will browse live campaigns and upload the data content via our app and will be able to earn money inexchange of thier contribution.
+    b. Studio (Quality Assurance + Programmatic Data Labeling)
+    End-to-end processing engine is equipped with:
+        - Layer 1: AI/ML automated pre-processing and cleanup like duplication check, blur check, dim light, clearity of audio, malware check, file format check and so on. It will filter out 80-90% of junk and unappropriate data contents uploaded by contributors.
+        - Layer 2: Human + Expert Verfification for uploaded data contents to achieve 99.9% premium unlabeled data.
+        - Layer 3: Weak supervision driven data labeling with Human in the Loop and active learning—reducing manual labeling effort by up to 90%. And blending synthetic data generation(Taxonomy based) for data scaling with differential privacy(ε=1.0)
+    Now, we can generate 97-99% accurate premium labeled trainable dataset for AI/ML models which will be ready to predict and perform with 96-99% accurately.
+
+
+3. Who will benefit from your solution? Who is your target user or ideal customer?
+-> Our solution benefits small to medium scale businesses (SMBs) and startups building/integrating AI/ML models and tools.
+On top of that,contributors earning from data tasks. Target customers are AI developers/companies buying datasets.While contributors can be anyone like everyday Nepalese, freelancers, skilled individual providing data supply.
+
+4. How will your idea impact your end users?
+-> AI teams and SMBs get affordable, Nepal-specific datasets that cut training time, faster AI/ML model delivery/shipment and with 97-99% model accuracy.
+Contributors can earn money with thier device uploads, vital income in Nepal where unemployment is one of major issue. Not directly through us but the farmers, health workers, tourists and other will be benefits by using the AI tools build by same AI teams and SMBs.
+
+5. Briefly explain how your team has engaged with this problem so far
+->For ideation and planning, we have decided to go with "humpStac" as our startup name as combination of HumpBack Whale + Data Stack, 
+we have conducted research about how to optimize and implement the Quality Assurance(QA) Pipeline for assuring the quality content upload by contributor, then researched and scarped research papers on Programmatic Data labeling (weak supervision); how to integrate it, and about synthetic data and its generation with taxomony based approach to prevent modal collapsing.
+
+We've conducted small talk like interviews [few contributors, 5 SMBs (AI sector)] revealing demand for multimodal data like "multiple ethnic languaged datasets", "cultured based image assets", "images of specific type of plants grow in particular season" and so on. We have initiated to collaborate with Hugging Face open source community for suggestion and approches we might need to adapt for our AI/Ml models in our project tailored to Nepal(South Asian) context.
+
+6. What is one challenge your team expects while building the prototype?
+-> Since data labeling and processing form the core of our project, one of the major challenge will be handling diverse multimodal files (50MB+ videos, raw audio, images) on VPS without dedicated GPUs for Minimum Viable Product (MVP).
+Further, synthetic data generation will going to need precise implementation with proper research on taxonomy based approach for optimal outcome.
+Our team is packed with Devloper, Management background and have previously participated in other programs as well so no issue in team co-ordination.   
+
+7. What makes your idea unique? 
+-> we provide two-sided marketplace where buyers access ready-made Nepal datasets or launch custom campaigns for specific data needs. Plus we will be providing a studio where real crowd data goes in Quality Assurance pipeline then end to end data labeling (Collect -> QA -> labeling -> ready-to-train data) with option for Synthetic data generation for data scaling and preserving time and resources for our customers. No platform combines this multi-modal data marketplace flexibility and programmatic data labeling(automated process) + active learning in Nepal. 
