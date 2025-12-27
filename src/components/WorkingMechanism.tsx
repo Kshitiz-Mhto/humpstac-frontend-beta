@@ -186,7 +186,7 @@ const WorkingMechanism: React.FC = () => {
                                             </div>
                                             <div className="flex items-center gap-2 text-[12px] text-slate-700">
                                                 <CheckCircle2 className="w-3.5 h-3.5 text-blue-500" />
-                                                <span>Noise and Distortion Detection</span>
+                                                <span>Noise, Distortion Detection</span>
                                             </div>
                                             <div className="flex items-center gap-2 text-[12px] text-slate-700">
                                                 <CheckCircle2 className="w-3.5 h-3.5 text-blue-500" />
@@ -220,7 +220,7 @@ const WorkingMechanism: React.FC = () => {
                                         </div>
                                         <div>
                                             <p className="font-bold text-slate-900 text-xs">Expert Review</p>
-                                            <p className="text-[12px] text-slate-500">99.9% premium verification.</p>
+                                            <p className="text-[12px] text-slate-500">99.9% quallity assured</p>
                                         </div>
                                     </div>
                                 </div>
@@ -263,7 +263,7 @@ const WorkingMechanism: React.FC = () => {
                                     </div>
                                     <div>
                                         <p className="font-bold text-slate-900 text-xs">Active Learning</p>
-                                        <p className="text-[12px] text-slate-500">Loop-based error correction.</p>
+                                        <p className="text-[12px] text-slate-500">Labels the data that matters most and iteratively corrects errors.</p>
                                     </div>
                                 </div>
 
