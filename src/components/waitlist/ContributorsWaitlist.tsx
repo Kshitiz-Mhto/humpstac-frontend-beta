@@ -42,7 +42,7 @@ const ContributorsWaitlist: React.FC = () => {
                             className="w-32 h-32 md:w-32 md:h-32 object-contain scale-150"
                         />
                         <h2 className="text-3xl font-extrabold text-slate-900 mb-3">
-                            Join as a Contributor
+                            Join the Contributors Waitlist
                         </h2>
                         <p className="text-slate-600">
                             Be the first to access our platform and start earning.
@@ -100,7 +100,7 @@ const ContributorsWaitlist: React.FC = () => {
                                         <div className="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                                     ) : (
                                         <>
-                                            Join Waitlist
+                                            Join us
                                             <ArrowRight className="w-5 h-5" />
                                         </>
                                     )}
