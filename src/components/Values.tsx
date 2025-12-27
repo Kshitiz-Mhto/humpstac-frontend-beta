@@ -34,7 +34,7 @@ const Values: React.FC = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-slate-900 mb-1">Synthethic Data Generation</h4>
-                                        <p className="text-sm text-slate-600">Generate synthethic data as per need to overcome rare-case challenges to improve AI performances</p>
+                                        <p className="text-sm text-slate-600">Boost AI performance by filling rare-case gaps with tailored synthetic data.</p>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@ const Values: React.FC = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-slate-900 mb-1">Remote Opportunities</h4>
-                                        <p className="text-sm text-slate-600"> Work remotely across the globe — from anywhere, anytime
+                                        <p className="text-sm text-slate-600"> Work remotely across the globe with AI teams and companies — from anywhere, anytime
                                         </p>
                                     </div>
                                 </div>
