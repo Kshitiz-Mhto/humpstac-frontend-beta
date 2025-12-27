@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
             <img
               src="/assets/logo_only_white-removebg.png"
               alt="Logo"
-              className="w-16 h-16 rounded-xl object-contain scale-150"
+              className="w-10 h-10 md:w-16 md:h-16 rounded-xl object-contain scale-125 md:scale-150"
             />
 
             <span className="text-4xl font-bold tracking-tight text-slate-900">
