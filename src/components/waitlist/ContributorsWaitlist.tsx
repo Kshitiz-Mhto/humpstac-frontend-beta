@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, User, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Mail, User, CheckCircle2, ArrowRight, AlertCircle } from 'lucide-react';
+import { supabase } from '../../lib/supabase';
 
 const ContributorsWaitlist: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -9,21 +10,43 @@ const ContributorsWaitlist: React.FC = () => {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [error, setError] = useState<string | null>(null);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
+        if (error) setError(null);
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setError(null);
 
-        // Simulate API call
-        await new Promise((resolve) => setTimeout(resolve, 1500));
+        try {
+            const { error: supabaseError } = await supabase
+                .from('contributors')
+                .insert([
+                    {
+                        name: formData.name,
+                        email: formData.email,
+                    },
+                ]);
 
-        setIsSubmitting(false);
-        setIsSubmitted(true);
+            if (supabaseError) {
+                if (supabaseError.code === '23505') { // Unique violation
+                    throw new Error('This email is already registered.');
+                }
+                throw supabaseError;
+            }
+
+            setIsSubmitted(true);
+        } catch (err: any) {
+            console.error('Error submitting form:', err);
+            setError(err.message || 'Something went wrong. Please try again.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -60,6 +83,12 @@ const ContributorsWaitlist: React.FC = () => {
                                 className="space-y-5"
                             >
                                 <div className="space-y-4">
+                                    {error && (
+                                        <div className="bg-red-50 text-red-600 p-3 rounded-xl flex items-center gap-2 text-sm">
+                                            <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                                            {error}
+                                        </div>
+                                    )}
                                     <div className="relative">
                                         <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                             <User className="h-5 w-5 text-slate-400" />
