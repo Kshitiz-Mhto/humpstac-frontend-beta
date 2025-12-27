@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0CC1E0]/10 border border-[#0CC1E0]/20 text-[#0CC1E0] text-sm font-bold tracking-wider mb-8 animate-fade-in">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0CC1E0]/10 border border-[#0CC1E0]/20 text-[#0CC1E0] text-sm font-bold tracking-wider mb-14 animate-fade-in">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0CC1E0] opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0CC1E0]"></span>
