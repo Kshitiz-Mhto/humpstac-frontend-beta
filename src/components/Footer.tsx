@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
               <h5 className="font-bold text-slate-900 mb-1">Subscribe to our newsletter</h5>
               <p className="text-sm text-slate-500">Get the latest updates on datasets and AI trends.</p>
             </div>
-            <div className="flex w-full md:w-auto min-w-[300px] items-center gap-2 bg-slate-50 border border-slate-200 rounded-xl px-2 py-2">
+            <div className="flex w-full md:w-auto md:min-w-[300px] items-center gap-2 bg-slate-50 border border-slate-200 rounded-xl px-2 py-2">
               <input
                 type="email"
                 placeholder="email@company.com"

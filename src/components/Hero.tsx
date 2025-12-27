@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
         </div>
 
 
-        <h1 className="text-5xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-5">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-5">
           Scaling AI Data: From <span className="text-[#0CC1E0]">Curation</span> to <span className="text-[#0CC1E0]">Training‑Ready</span> Precision
         </h1>
 

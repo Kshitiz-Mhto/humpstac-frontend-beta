@@ -4,14 +4,14 @@ import { Database, Cpu, Scale, Zap, Globe, UploadCloud, Check } from 'lucide-rea
 
 const Values: React.FC = () => {
     return (
-        <section className="py-24 bg-slate-50">
+        <section className="py-16 md:py-24 bg-slate-50">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="grid lg:grid-cols-2 gap-12">
+                <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
                     {/* For Enterprise */}
-                    <div className="bg-gradient-to-br from-[#0CC1E0]/10 to-[#0CC1E0]/5 rounded-[2.5rem] p-10 border border-[#0CC1E0]/20 shadow-sm">
+                    <div className="bg-gradient-to-br from-[#0CC1E0]/10 to-[#0CC1E0]/5 rounded-[2.5rem] p-6 md:p-10 border border-[#0CC1E0]/20 shadow-sm">
                         <div className="mb-4">
-                            <h2 className="text-3xl font-bold mb-2">For Enterprises</h2>
-                            <p className="text-lg text-slate-600 mb-2 font-semibold">Buy ready datasets or launch campaigns for datasets</p>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-2">For Enterprises</h2>
+                            <p className="text-base md:text-lg text-slate-600 mb-2 font-semibold">Buy ready datasets or launch campaigns for datasets</p>
                         </div>
 
                         <div className="space-y-6 mb-8">
@@ -92,10 +92,10 @@ const Values: React.FC = () => {
                     </div>
 
                     {/* For Contributors */}
-                    <div className="bg-gradient-to-br from-[#0CC1E0]/10 to-[#0CC1E0]/5 rounded-[2.5rem] p-10 border border-[#0CC1E0]/20 shadow-sm">
+                    <div className="bg-gradient-to-br from-[#0CC1E0]/10 to-[#0CC1E0]/5 rounded-[2.5rem] p-6 md:p-10 border border-[#0CC1E0]/20 shadow-sm">
                         <div className="mb-4">
-                            <h2 className="text-3xl font-bold mb-2">For Contributors</h2>
-                            <p className="text-lg text-slate-600 mb-2 font-semibold">Turn your raw content into income</p>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-2">For Contributors</h2>
+                            <p className="text-base md:text-lg text-slate-600 mb-2 font-semibold">Turn your raw content into income</p>
                         </div>
 
                         <div className="space-y-6 mb-10">

@@ -63,19 +63,19 @@ const Marketplace: React.FC = () => {
   const [isLaunchModalOpen, setIsLaunchModalOpen] = useState(false);
 
   return (
-    <section id="marketplace" className="py-24 bg-white">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold mb-4 text-slate-900">Marketplace</h2>
+    <section id="marketplace" className="py-16 md:py-24 bg-white">
+      <div className="text-center mb-10 md:mb-16 px-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">Marketplace</h2>
         <p className="text-slate-600 max-w-xl mx-auto">
           Platform to buy premium training-ready dataset or launch campaigns for tailored datasets.
         </p>
       </div>
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-start">
           {/* For Buyers */}
           <div>
-            <div className="mb-6 mt-9">
-              <h2 className="text-3xl font-bold mb-4">For Enterprises and AI Teams</h2>
+            <div className="mb-6 mt-0 md:mt-9">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">For Enterprises and AI Teams</h2>
               <p className="text-slate-600">Source high quality, rights-cleared datasets at scale or post campaigns for custom dataset.</p>
             </div>
 
@@ -100,9 +100,9 @@ const Marketplace: React.FC = () => {
           </div>
 
           {/* For Contributors */}
-          <div className="bg-slate-50 rounded-[2.5rem] p-10 border border-slate-100 shadow-sm">
+          <div className="bg-slate-50 rounded-[2.5rem] p-6 md:p-10 border border-slate-100 shadow-sm">
             <div className="mb-8">
-              <h2 className="text-3xl font-bold mb-4">For Contributors</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">For Contributors</h2>
               <p className="text-slate-600">Turn your high-quality data into earnings with 88% payouts.</p>
             </div>
 
