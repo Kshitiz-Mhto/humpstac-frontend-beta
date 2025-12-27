@@ -186,7 +186,7 @@ const BuyersWaitlist: React.FC = () => {
                                 </div>
                                 <h3 className="text-2xl font-bold text-slate-900 mb-2">You're on the list!</h3>
                                 <p className="text-slate-600 mb-8">
-                                    Thank you for your interest, {formData.name.split(' ')[0]}. We'll reach out to {formData.work_email} soon as possible.
+                                    Thank you for your interest, {formData.name.split(' ')[0]}. We'll reach out to you as soon as possible.
                                 </p>
                             </motion.div>
                         )}
