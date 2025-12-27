@@ -156,7 +156,7 @@ const WorkingMechanism: React.FC = () => {
                             </div>
 
                             <div className="mt-6 pt-4 border-t border-slate-50 flex items-center gap-2">
-                            <GitPullRequest className="w-4 h-4 text-green-600" />
+                                <GitPullRequest className="w-4 h-4 text-green-600" />
                                 <p className="text-[10px] uppercase tracking-wider font-bold text-slate-400">Contributor Interface</p>
                             </div>
                         </div>
@@ -242,8 +242,8 @@ const WorkingMechanism: React.FC = () => {
                     <motion.div className="flex-1 min-w-0" variants={cardVariants}>
                         <div className={CARD_BASE_CLASSES}>
                             <div className="flex items-center justify-between mb-6 flex-nowrap">
-                              <h3 className="text-xl font-bold text-slate-800 leading-tight">HS Engine</h3>
-                              <Badge color="purple">Phase 3</Badge>
+                                <h3 className="text-xl font-bold text-slate-800 leading-tight">HS Engine</h3>
+                                <Badge color="purple">Phase 3</Badge>
                             </div>
 
                             <div className="space-y-3 flex-grow">
@@ -339,7 +339,7 @@ const WorkingMechanism: React.FC = () => {
                             </div>
 
                             <div className="flex items-center gap-2mt-6 pt-4 border-t border-slate-50 flex items-center gap-2">
-                            <Rocket className="w-4 h-4 text-amber-800" />
+                                <Rocket className="w-4 h-4 text-amber-800" />
                                 <p className="text-[10px] uppercase tracking-wider font-bold text-slate-400">Ready to Train</p>
                             </div>
                         </div>

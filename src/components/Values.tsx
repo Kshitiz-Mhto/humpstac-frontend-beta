@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Database, Cpu, Scale, Zap, Globe, UploadCloud, Check } from 'lucide-react';
 
 const Values: React.FC = () => {
@@ -78,7 +79,14 @@ const Values: React.FC = () => {
                             </div>
                         </div>
 
-                        <button className="w-full bg-slate-900 text-white py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all hover:shadow-lg">
+                        <button
+                            onClick={() => {
+                                document.getElementById('marketplace')?.scrollIntoView({
+                                    behavior: 'smooth',
+                                });
+                            }}
+                            className="w-full bg-slate-900 text-white py-4 rounded-2xl font-bold hover:bg-slate-800 border-0 outline-none focus:outline-none focus:ring-0 ring-0 transition-all hover:shadow-lg"
+                        >
                             Browse datasets
                         </button>
                     </div>
@@ -157,9 +165,11 @@ const Values: React.FC = () => {
                         </div>
 
 
-                        <button className="w-full bg-[#0CC1E0] text-white py-4 rounded-2xl font-bold hover:shadow-xl hover:shadow-[#0CC1E0]/30 transition-all active:scale-95">
-                            Start Contributing
-                        </button>
+                        <Link to="/contributor-waitlist">
+                            <button className="w-full bg-[#0CC1E0] text-white py-4 rounded-2xl font-bold hover:shadow-xl hover:shadow-[#0CC1E0]/30 transition-all active:scale-95">
+                                Start Contributing
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

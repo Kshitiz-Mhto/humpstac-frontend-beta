@@ -84,14 +84,18 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 uppercase tracking-widest">
+        <div className="pt-4 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 tracking-widest font-normal">
           <p>© 2024 humpStac Inc. All rights reserved.</p>
           <div className="flex flex-wrap gap-6">
-            <a href="#" className="hover:text-[#0CC1E0] transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-[#0CC1E0] transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-[#0CC1E0] transition-colors">Cookies</a>
+            <a href="#" className="hover:text-[#0CC1E0] transition-colors font-normal">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-[#0CC1E0] transition-colors font-normal">
+              Terms of Service
+            </a>
           </div>
         </div>
+
       </div>
     </footer>
   );

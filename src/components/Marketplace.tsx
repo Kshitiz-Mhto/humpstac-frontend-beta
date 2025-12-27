@@ -75,7 +75,7 @@ const Marketplace: React.FC = () => {
           {/* For Buyers */}
           <div>
             <div className="mb-6 mt-9">
-              <h2 className="text-3xl font-bold mb-4">For Buyers</h2>
+              <h2 className="text-3xl font-bold mb-4">For Enterprises and AI Teams</h2>
               <p className="text-slate-600">Source high quality, rights-cleared datasets at scale or post campaigns for custom dataset.</p>
             </div>
 
@@ -196,7 +196,7 @@ const Marketplace: React.FC = () => {
                   <p className="text-3xl font-bold text-[#0CC1E0]">{selectedCampaign.price}</p>
                 </div>
                 <button className="bg-[#0CC1E0] text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl hover:shadow-[#0CC1E0]/30 transition-all active:scale-95">
-                  Purchase Dataset
+                  Explore dataset
                 </button>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
@@ -34,12 +35,16 @@ const Hero: React.FC = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="w-full sm:w-auto px-8 py-4 bg-[#0CC1E0]/80 text-black rounded-1xl text-lg hover:shadow-xl border-0 outline-none focus:outline-none focus:ring-0 ring-0 hover:shadow-[#0CC1E0]/30 transition-all transform hover:-translate-y-1 active:scale-95">
-            Join as a Contributor
-          </button>
-          <button className="w-full sm:w-auto px-8 py-4 bg-white text-slate-700 rounded-1xl text-lg border-0 outline-none focus:outline-none focus:ring-0 ring-0 border-2 border-[#0CC1E0]/80 hover:bg-[#0CC1E0]/20 hover:text-slate-900 transition-all">
-            Enterprise Portal
-          </button>
+          <Link to="/contributor-waitlist" className="w-full sm:w-auto">
+            <button className="w-full px-8 py-4 bg-[#0CC1E0]/80 text-black rounded-1xl text-lg hover:shadow-xl border-0 outline-none focus:outline-none focus:ring-0 ring-0 hover:shadow-[#0CC1E0]/30 transition-all transform hover:-translate-y-1 active:scale-95">
+              Join as a Contributor
+            </button>
+          </Link>
+          <Link to="/buyer-waitlist" className="w-full sm:w-auto">
+            <button className="w-full px-8 py-4 bg-white text-slate-700 rounded-1xl text-lg border-0 outline-none focus:outline-none focus:ring-0 ring-0 border-2 border-[#0CC1E0]/80 hover:bg-[#0CC1E0]/20 hover:text-slate-900 transition-all">
+              Enterprise Portal
+            </button>
+          </Link>
         </div>
 
         {/* 
