@@ -11,7 +11,7 @@ const Values: React.FC = () => {
                     <div className="bg-gradient-to-br from-[#0CC1E0]/10 to-[#0CC1E0]/5 rounded-[2.5rem] p-6 md:p-10 border border-[#0CC1E0]/20 shadow-sm">
                         <div className="mb-4">
                             <h2 className="text-2xl md:text-3xl font-bold mb-2">For Enterprises</h2>
-                            <p className="text-base md:text-lg text-slate-600 mb-2 font-semibold">Buy ready datasets or launch campaigns for custom datasets</p>
+                            <p className="text-base md:text-lg text-slate-600 mb-2 font-semibold">Access fully curated, training-ready datasets</p>
                         </div>
 
                         <div className="space-y-6 mb-8">
