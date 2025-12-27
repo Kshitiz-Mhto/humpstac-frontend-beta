@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
         </h1>
 
         <p className="text-lg text-slate-600 leading-relaxed mb-10 max-w-3xl mx-auto">
-          A streamlined platform to transform multimodal raw data into premium, labeled, rights-cleared datasets; ready to train and supercharge AI/ML models fast.
+          A streamlined platform that transforms multimodal raw data into premium, labeled, rights-cleared datasets, ready to train and supercharge your AI/ML models fast.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
