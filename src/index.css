@@ -11,6 +11,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Blurple Palette */
+  --primary: #6366F1;
+  /* Indigo 500 */
+  --primary-dark: #4F46E5;
+  /* Indigo 600 */
+  --accent: #8B5CF6;
+  /* Violet 500 */
+  --bg-soft: #F5F3FF;
+  /* Violet 50 */
 }
 
 *,

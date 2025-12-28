@@ -73,7 +73,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen selection:bg-[#0CC1E0]/30 selection:text-slate-900">
+      <div className="min-h-screen selection:bg-[#6366F1]/30 selection:text-slate-900">
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
