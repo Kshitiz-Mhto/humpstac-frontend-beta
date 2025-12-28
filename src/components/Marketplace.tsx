@@ -89,10 +89,10 @@ const Marketplace: React.FC = () => {
               ))}
 
               <div
-                className="p-6 border-2 border-dashed border-slate-200 rounded-3xl flex flex-col items-center justify-center text-center group cursor-pointer hover:border-[#0CC1E0] hover:bg-slate-50 transition-all"
+                className="p-6 border-2 border-dashed border-slate-200 rounded-3xl flex flex-col items-center justify-center text-center group cursor-pointer hover:border-[#6366F1] hover:bg-slate-50 transition-all"
                 onClick={() => setIsLaunchModalOpen(true)}
               >
-                <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-[#0CC1E0]/10 group-hover:text-[#0CC1E0] mb-4 text-2xl font-light">+</div>
+                <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-[#6366F1]/10 group-hover:text-[#6366F1] mb-4 text-2xl font-light">+</div>
                 <h4 className="font-bold text-slate-900 mb-1">Launch a custom campaign</h4>
                 <p className="text-xs text-slate-500">Post your requirements and get data in days.</p>
               </div>
@@ -113,7 +113,7 @@ const Marketplace: React.FC = () => {
               </div>
               <div className="h-32 flex items-end gap-2 px-2">
                 {[40, 70, 45, 90, 65, 80, 100].map((h, i) => (
-                  <div key={i} className="flex-1 bg-[#0CC1E0]/20 rounded-t-md hover:bg-[#0CC1E0] transition-colors" style={{ height: `${h}%` }}></div>
+                  <div key={i} className="flex-1 bg-[#6366F1]/20 rounded-t-md hover:bg-[#6366F1] transition-colors" style={{ height: `${h}%` }}></div>
                 ))}
               </div>
               <div className="mt-6 pt-6 border-t border-slate-100 flex justify-between items-center">
@@ -126,21 +126,21 @@ const Marketplace: React.FC = () => {
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-slate-200 hover:border-[#0CC1E0] cursor-pointer transition-all">
+              <div className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-slate-200 hover:border-[#6366F1] cursor-pointer transition-all">
                 <div className="w-10 h-10 bg-slate-100 rounded-xl flex items-center justify-center text-xl">🖼️</div>
                 <div className="flex-1">
                   <h5 className="text-sm font-bold">Image Segmentation: Urban Streets</h5>
                   <p className="text-xs text-slate-500">$0.14 per label • 1.2k tasks</p>
                 </div>
-                <button className="text-xs font-bold text-[#0CC1E0] border-0 outline-none focus:outline-none focus:ring-0 ring-0">Start</button>
+                <button className="text-xs font-bold text-[#6366F1] border-0 outline-none focus:outline-none focus:ring-0 ring-0">Start</button>
               </div>
-              <div className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-slate-200 hover:border-[#0CC1E0] cursor-pointer transition-all">
+              <div className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-slate-200 hover:border-[#6366F1] cursor-pointer transition-all">
                 <div className="w-10 h-10 bg-slate-100 rounded-xl flex items-center justify-center text-xl">🎙️</div>
                 <div className="flex-1">
                   <h5 className="text-sm font-bold">Audio Transcription: Medical</h5>
                   <p className="text-xs text-slate-500">$0.85 per min • 450 mins</p>
                 </div>
-                <button className="text-xs font-bold text-[#0CC1E0] border-0 outline-none focus:outline-none focus:ring-0 ring-0">Start</button>
+                <button className="text-xs font-bold text-[#6366F1] border-0 outline-none focus:outline-none focus:ring-0 ring-0">Start</button>
               </div>
             </div>
           </div>
@@ -162,7 +162,7 @@ const Marketplace: React.FC = () => {
               <div className="mb-8">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {selectedCampaign.tags.map(tag => (
-                    <span key={tag} className="px-3 py-1 bg-[#0CC1E0]/10 text-[#0CC1E0] rounded-lg text-[10px] font-bold uppercase tracking-wider">{tag}</span>
+                    <span key={tag} className="px-3 py-1 bg-[#6366F1]/10 text-[#6366F1] rounded-lg text-[10px] font-bold uppercase tracking-wider">{tag}</span>
                   ))}
                 </div>
                 <h3 className="text-3xl font-bold text-slate-900 mb-4">{selectedCampaign.title}</h3>
@@ -193,9 +193,9 @@ const Marketplace: React.FC = () => {
               <div className="flex items-center justify-between pt-8 border-t border-slate-100">
                 <div>
                   <p className="text-xs text-slate-400 font-medium">Estimated Price</p>
-                  <p className="text-3xl font-bold text-[#0CC1E0]">{selectedCampaign.price}</p>
+                  <p className="text-3xl font-bold text-[#6366F1]">{selectedCampaign.price}</p>
                 </div>
-                <button className="bg-[#0CC1E0] text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl hover:shadow-[#0CC1E0]/30 transition-all active:scale-95">
+                <button className="bg-[#6366F1] text-white px-8 py-4 rounded-2xl font-bold hover:shadow-xl hover:shadow-[#6366F1]/30 transition-all active:scale-95">
                   Explore dataset
                 </button>
               </div>
@@ -228,7 +228,7 @@ const Marketplace: React.FC = () => {
                     <input
                       type="text"
                       placeholder="e.g. Urban Street Scene Segmentation"
-                      className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0CC1E0] focus:border-transparent transition-all"
+                      className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-transparent transition-all"
                       required
                     />
                   </div>
@@ -238,7 +238,7 @@ const Marketplace: React.FC = () => {
                     <input
                       type="text"
                       placeholder="e.g. 50,000 images"
-                      className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0CC1E0] focus:border-transparent transition-all"
+                      className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-transparent transition-all"
                       required
                     />
                   </div>
@@ -248,7 +248,7 @@ const Marketplace: React.FC = () => {
                   <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Campaign Description</label>
                   <textarea
                     placeholder="Brief description of your dataset requirements..."
-                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0CC1E0] focus:border-transparent transition-all min-h-[80px]"
+                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-transparent transition-all min-h-[80px]"
                     required
                   ></textarea>
                 </div>
@@ -258,7 +258,7 @@ const Marketplace: React.FC = () => {
                   <input
                     type="text"
                     placeholder="e.g. Image, Computer Vision, Autonomous Driving"
-                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0CC1E0] focus:border-transparent transition-all"
+                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-transparent transition-all"
                   />
                 </div>
 
@@ -266,7 +266,7 @@ const Marketplace: React.FC = () => {
                   <label className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">Use Case</label>
                   <textarea
                     placeholder="Describe how you intend to use this data..."
-                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0CC1E0] focus:border-transparent transition-all min-h-[100px]"
+                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-transparent transition-all min-h-[100px]"
                     required
                   ></textarea>
                 </div>
@@ -277,7 +277,7 @@ const Marketplace: React.FC = () => {
                     <input
                       type="number"
                       placeholder="e.g. 14"
-                      className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0CC1E0] focus:border-transparent transition-all"
+                      className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#6366F1] focus:border-transparent transition-all"
                       required
                     />
                   </div>
@@ -310,7 +310,7 @@ const Marketplace: React.FC = () => {
                   </button>
                   <button
                     type="submit"
-                    className="bg-[#0CC1E0] text-white px-8 py-3 rounded-xl font-bold border-0 outline-none focus:outline-none focus:ring-0 ring-0 hover:text-slate-700 transition-all active:scale-95"
+                    className="bg-[#6366F1] text-white px-8 py-3 rounded-xl font-bold border-0 outline-none focus:outline-none focus:ring-0 ring-0 hover:text-slate-700 transition-all active:scale-95"
                   >
                     Launch 🚀
                   </button>
@@ -326,12 +326,12 @@ const Marketplace: React.FC = () => {
 
 const CampaignCard = ({ campaign, onClick }: { campaign: Campaign, onClick: () => void }) => (
   <div
-    className="bg-white border border-slate-200 p-6 rounded-3xl hover:border-[#0CC1E0] hover:shadow-xl hover:shadow-slate-200/50 transition-all cursor-pointer group"
+    className="bg-white border border-slate-200 p-6 rounded-3xl hover:border-[#6366F1] hover:shadow-xl hover:shadow-slate-200/50 transition-all cursor-pointer group"
     onClick={onClick}
   >
     <div className="flex justify-between items-start mb-4">
-      <h4 className="text-lg font-bold text-slate-900 group-hover:text-[#0CC1E0] transition-colors">{campaign.title}</h4>
-      <span className="text-lg font-bold text-[#0CC1E0]">{campaign.price}</span>
+      <h4 className="text-lg font-bold text-slate-900 group-hover:text-[#6366F1] transition-colors">{campaign.title}</h4>
+      <span className="text-lg font-bold text-[#6366F1]">{campaign.price}</span>
     </div>
     <div className="flex flex-wrap gap-2 mb-6">
       {campaign.tags.map((tag: string) => (

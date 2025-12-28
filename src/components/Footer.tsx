@@ -4,19 +4,19 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-50 pt-20 pb-10 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
-          <div className="md:col-span-2 lg:col-span-1">
-            <div className="flex items-center gap-2 mb-1">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-8">
+          <div className="md:col-span-2 lg:col-span-1 -mt-2">
+            <div className="flex items-center gap-2 mb-2">
               <div className="w-10 h-10 rounded-lg flex items-center justify-center">
                 <img
-                  src="/assets/logo_only_white-removebg.png"
+                  src="/assets/humpstac_logo_bgwhite.png"
                   alt="Logo"
                   className="w-16 h-16 rounded-xl object-contain scale-150"
                 />
               </div>
               <span className="text-xl font-bold tracking-tight text-slate-900">humpStac</span>
             </div>
-            <p className="text-slate-500 text-sm mb-4 leading-relaxed">
+            <p className="text-slate-500 text-sm mb-2 leading-relaxed">
               Ready-to-train, rights-cleared data at scale.
             </p>
             <div className="flex gap-4">
@@ -29,37 +29,37 @@ const Footer: React.FC = () => {
           <div>
             <h5 className="font-bold text-slate-900 mb-6 uppercase text-xs tracking-widest">Product</h5>
             <ul className="space-y-4 text-sm text-slate-500 font-medium">
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Marketplace</a></li>
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Data Labeling</a></li>
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Synthetic Data Gen</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">Marketplace</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">Data Labeling</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">Synthetic Data Gen</a></li>
             </ul>
           </div>
 
           <div>
             <h5 className="font-bold text-slate-900 mb-6 uppercase text-xs tracking-widest">Contributors</h5>
             <ul className="space-y-4 text-sm text-slate-500 font-medium">
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Join as Contributor</a></li>
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">View Earnings</a></li>
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">My Submissions</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">Join as Contributor</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">View Earnings</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">My Submissions</a></li>
             </ul>
           </div>
 
           <div>
             <h5 className="font-bold text-slate-900 mb-6 uppercase text-xs tracking-widest">Enterprise</h5>
             <ul className="space-y-4 text-sm text-slate-500 font-medium">
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Browse Datasets</a></li>
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Custom Datasets</a></li>
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Book a Meeting</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">Browse Datasets</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">Custom Datasets</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">Book a Meeting</a></li>
             </ul>
           </div>
 
           <div>
             <h5 className="font-bold text-slate-900 mb-6 uppercase text-xs tracking-widest">Company</h5>
             <ul className="space-y-4 text-sm text-slate-500 font-medium">
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Blog & Research</a></li>
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-[#0CC1E0] transition-colors">Documentation</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">Blog & Research</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">Contact</a></li>
+              <li><a href="#" className="hover:text-[#6366F1] transition-colors">Documentation</a></li>
             </ul>
           </div>
         </div>
@@ -87,10 +87,10 @@ const Footer: React.FC = () => {
         <div className="pt-4 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 tracking-widest font-normal">
           <p>© 2024 humpStac Inc. All rights reserved.</p>
           <div className="flex flex-wrap gap-6">
-            <a href="#" className="hover:text-[#0CC1E0] transition-colors font-normal">
+            <a href="#" className="hover:text-[#6366F1] transition-colors font-normal">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-[#0CC1E0] transition-colors font-normal">
+            <a href="#" className="hover:text-[#6366F1] transition-colors font-normal">
               Terms of Service
             </a>
           </div>
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
 };
 
 const SocialIcon = ({ icon }: { icon: string }) => (
-  <div className="w-8 h-8 bg-white border border-slate-200 rounded-lg flex items-center justify-center text-slate-600 hover:border-[#0CC1E0] hover:text-[#0CC1E0] cursor-pointer transition-all">
+  <div className="w-8 h-8 bg-white border border-slate-200 rounded-lg flex items-center justify-center text-slate-600 hover:border-[#6366F1] hover:text-[#6366F1] cursor-pointer transition-all">
     {icon}
   </div>
 );

@@ -29,9 +29,9 @@ const Navbar: React.FC = () => {
         <Link to="/">
           <div className="flex items-center cursor-pointer">
             <img
-              src="/assets/logo_only_white-removebg.png"
+              src="/assets/humpstac_logo_bgwhite.png"
               alt="Logo"
-              className="w-10 h-10 md:w-16 md:h-16 rounded-xl object-contain scale-125 md:scale-150"
+              className="w-10 h-10 md:w-16 md:h-16 rounded-xl object-contain scale-125 md:scale-120"
             />
 
             <span className="text-4xl font-bold tracking-tight text-slate-900">
@@ -42,17 +42,17 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-lg font-medium text-slate-600">
-          <a href="#product" onClick={(e) => handleNavClick(e, '#product')} className="hover:text-[#0CC1E0] transition-colors">Product</a>
-          <a href="#marketplace" onClick={(e) => handleNavClick(e, '#marketplace')} className="hover:text-[#0CC1E0] transition-colors">Marketplace</a>
-          <a href="#pricing" onClick={(e) => handleNavClick(e, '#pricing')} className="hover:text-[#0CC1E0] transition-colors">Pricing</a>
-          <a href="#resources" onClick={(e) => handleNavClick(e, '#resources')} className="hover:text-[#0CC1E0] transition-colors">Resources</a>
+          <a href="#product" onClick={(e) => handleNavClick(e, '#product')} className="hover:text-[#6366F1] transition-colors">Product</a>
+          <a href="#marketplace" onClick={(e) => handleNavClick(e, '#marketplace')} className="hover:text-[#6366F1] transition-colors">Marketplace</a>
+          <a href="#pricing" onClick={(e) => handleNavClick(e, '#pricing')} className="hover:text-[#6366F1] transition-colors">Pricing</a>
+          <a href="#resources" onClick={(e) => handleNavClick(e, '#resources')} className="hover:text-[#6366F1] transition-colors">Resources</a>
         </div>
 
         <div className="hidden md:flex items-center gap-4">
           <Link to="/buyer-waitlist">
-            <button className="bg-[#0CC1E0] text-white px-5 py-2.5 rounded-xl text-sm font-semibold 
+            <button className="bg-[#6366F1] text-white px-5 py-2.5 rounded-xl text-sm font-semibold 
               border-0 outline-none focus:outline-none focus:ring-0 ring-0
-              hover:shadow-lg hover:shadow-[#0CC1E0]/20 transition-all active:scale-95">
+              hover:shadow-lg hover:shadow-[#6366F1]/20 transition-all active:scale-95">
               Book a demo
             </button>
           </Link>
@@ -80,15 +80,15 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-slate-200 shadow-xl p-6 flex flex-col gap-6 animate-fade-in">
-          <a href="#product" onClick={(e) => handleNavClick(e, '#product')} className="text-xl font-medium text-slate-600 hover:text-[#0CC1E0]">Product</a>
-          <a href="#marketplace" onClick={(e) => handleNavClick(e, '#marketplace')} className="text-xl font-medium text-slate-600 hover:text-[#0CC1E0]">Marketplace</a>
-          <a href="#pricing" onClick={(e) => handleNavClick(e, '#pricing')} className="text-xl font-medium text-slate-600 hover:text-[#0CC1E0]">Pricing</a>
-          <a href="#resources" onClick={(e) => handleNavClick(e, '#resources')} className="text-xl font-medium text-slate-600 hover:text-[#0CC1E0]">Resources</a>
+          <a href="#product" onClick={(e) => handleNavClick(e, '#product')} className="text-xl font-medium text-slate-600 hover:text-[#6366F1]">Product</a>
+          <a href="#marketplace" onClick={(e) => handleNavClick(e, '#marketplace')} className="text-xl font-medium text-slate-600 hover:text-[#6366F1]">Marketplace</a>
+          <a href="#pricing" onClick={(e) => handleNavClick(e, '#pricing')} className="text-xl font-medium text-slate-600 hover:text-[#6366F1]">Pricing</a>
+          <a href="#resources" onClick={(e) => handleNavClick(e, '#resources')} className="text-xl font-medium text-slate-600 hover:text-[#6366F1]">Resources</a>
           <div className="pt-4 border-t border-slate-100">
             <Link to="/buyer-waitlist" onClick={() => setIsMenuOpen(false)}>
-              <button className="w-full bg-[#0CC1E0] text-white px-5 py-3 rounded-xl text-lg font-semibold 
+              <button className="w-full bg-[#6366F1] text-white px-5 py-3 rounded-xl text-lg font-semibold 
                 border-0 outline-none focus:outline-none focus:ring-0 ring-0
-                hover:shadow-lg hover:shadow-[#0CC1E0]/20 transition-all active:scale-95">
+                hover:shadow-lg hover:shadow-[#6366F1]/20 transition-all active:scale-95">
                 Book a demo
               </button>
             </Link>

@@ -3,31 +3,40 @@ import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 pb-20 px-6 bg-[#F9FAFB] overflow-hidden">
-      {/* Background Decorative Elements */}
-      <div className="absolute inset-0 z-0">
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 opacity-[0.03]"
-          style={{ backgroundImage: 'radial-gradient(#0CC1E0 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
-        </div>
+    <section className="relative min-h-screen flex items-center justify-center pt-20 pb-20 px-6 bg-[#F8FAFC] overflow-hidden">
+      {/* New Background Design */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        {/* Grid Pattern with Radial Mask */}
+        <div
+          className="absolute inset-0 opacity-[0.2]"
+          style={{
+            backgroundImage: `
+              linear-gradient(to right, #6366F1 1px, transparent 1px),
+              linear-gradient(to bottom, #6366F1 1px, transparent 1px)
+            `,
+            backgroundSize: '50px 50px',
+            maskImage: 'radial-gradient(circle at center, black, transparent 80%)',
+            WebkitMaskImage: 'radial-gradient(circle at center, black, transparent 80%)'
+          }}
+        ></div>
 
-        {/* Blurred Blobs */}
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#0CC1E0]/10 rounded-full blur-[120px] animate-pulse"></div>
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-[#0CC1E0]/10 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '2s' }}></div>
+        {/* Subtle Accent Blobs */}
+        <div className="absolute -top-[10%] -left-[10%] w-[50%] h-[50%] bg-[#6366F1]/5 rounded-full blur-[120px] animate-pulse"></div>
+        <div className="absolute -bottom-[10%] -right-[10%] w-[50%] h-[50%] bg-[#8B5CF6]/5 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0CC1E0]/10 border border-[#0CC1E0]/20 text-[#0CC1E0] text-sm font-bold tracking-wider mb-14 animate-fade-in">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6366F1]/10 border border-[#6366F1]/20 text-[#6366F1] text-sm font-bold tracking-wider mb-14 animate-fade-in">
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0CC1E0] opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0CC1E0]"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#6366F1] opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-[#6366F1]"></span>
           </span>
           Ready-to-Train Data as Service
         </div>
 
 
         <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-5">
-          Scaling AI Data: From <span className="text-[#0CC1E0]">Curation</span> to <span className="text-[#0CC1E0]">Training‑Ready</span> Precision
+          Scaling AI Data: From <span className="text-[#6366F1]">Curation</span> to <span className="text-[#6366F1]">Training‑Ready</span> Precision
         </h1>
 
         <p className="text-lg text-slate-600 leading-relaxed mb-10 max-w-3xl mx-auto">
@@ -36,12 +45,12 @@ const Hero: React.FC = () => {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link to="/contributor-waitlist" className="w-full sm:w-auto">
-            <button className="w-full px-8 py-4 bg-[#0CC1E0]/80 text-black rounded-1xl text-lg hover:shadow-xl border-0 outline-none focus:outline-none focus:ring-0 ring-0 hover:shadow-[#0CC1E0]/30 transition-all transform hover:-translate-y-1 active:scale-95">
+            <button className="w-full px-8 py-4 bg-[#6366F1] text-white rounded-1xl text-lg hover:shadow-xl border-0 outline-none focus:outline-none focus:ring-0 ring-0 hover:shadow-[#6366F1]/30 transition-all transform hover:-translate-y-1 active:scale-95">
               Join as a Contributor
             </button>
           </Link>
           <Link to="/buyer-waitlist" className="w-full sm:w-auto">
-            <button className="w-full px-8 py-4 bg-white text-slate-700 rounded-1xl text-lg border-0 outline-none focus:outline-none focus:ring-0 ring-0 border-2 border-[#0CC1E0]/80 hover:bg-[#0CC1E0]/20 hover:text-slate-900 transition-all">
+            <button className="w-full px-8 py-4 bg-white text-slate-700 rounded-1xl text-lg border-0 outline-none focus:outline-none focus:ring-0 ring-0 border-2 border-[#6366F1] hover:bg-[#6366F1]/20 hover:text-slate-900 transition-all">
               Enterprise Portal
             </button>
           </Link>

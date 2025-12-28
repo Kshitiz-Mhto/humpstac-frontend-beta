@@ -7,7 +7,7 @@ const BeReady: React.FC = () => {
             <div className="max-w-4xl mx-auto text-center">
                 {/* Heading */}
                 <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
-                    Ready to <span className="text-[#0CC1E0]">Supercharge</span> and <span className="text-[#0CC1E0]">Ship</span> your AI/ML models?
+                    Ready to <span className="text-[#6366F1]">Supercharge</span> and <span className="text-[#6366F1]">Ship</span> your AI/ML models?
                 </h2>
 
                 {/* Description */}
@@ -18,12 +18,12 @@ const BeReady: React.FC = () => {
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                     <Link to="/contributor-waitlist" className="w-full sm:w-auto">
-                        <button className="w-full px-8 py-4 bg-[#0CC1E0]/80 text-black rounded-1xl text-lg border-0 outline-none focus:outline-none focus:ring-0 ring-0 hover:shadow-xl transition-all transform hover:-translate-y-1 active:scale-95">
+                        <button className="w-full px-8 py-4 bg-[#6366F1] text-white rounded-1xl text-lg hover:shadow-xl border-0 outline-none focus:outline-none focus:ring-0 ring-0 hover:shadow-[#6366F1]/30 transition-all transform hover:-translate-y-1 active:scale-95">
                             Join as a Contributor
                         </button>
                     </Link>
                     <Link to="/buyer-waitlist" className="w-full sm:w-auto">
-                        <button className="w-full px-8 py-4 bg-white text-slate-700 rounded-1xl text-lg border-0 outline-none focus:outline-none focus:ring-0 ring-0 border-2 border-[#0CC1E0]/80 hover:bg-[#0CC1E0]/20 hover:text-slate-900 transition-all">
+                        <button className="w-full px-8 py-4 bg-white text-slate-700 rounded-1xl text-lg border-0 outline-none focus:outline-none focus:ring-0 ring-0 border-2 border-[#6366F1]/80 hover:bg-[#6366F1]/20 hover:text-slate-900 transition-all">
                             Enterprise Portal
                         </button>
                     </Link>

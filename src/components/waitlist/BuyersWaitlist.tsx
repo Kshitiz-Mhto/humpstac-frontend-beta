@@ -65,12 +65,12 @@ const BuyersWaitlist: React.FC = () => {
                 >
                     <div className="flex flex-col items-center text-center mb-10">
                         <img
-                            src="/assets/logo_whitbg-removebg.png"
+                            src="/assets/humpstac_full_logo_bgwhite.png"
                             alt="Logo"
                             className="w-32 h-32 md:w-32 md:h-32 object-contain scale-150"
                         />
 
-                        <h2 className="text-3xl font-extrabold text-slate-900 mb-3">
+                        <h2 className="text-3xl font-extrabold text-slate-900 mb-1">
                             Join the Enterprise Waitlist
                         </h2>
                         <p className="text-slate-600">
@@ -106,7 +106,7 @@ const BuyersWaitlist: React.FC = () => {
                                             placeholder="Full Name"
                                             value={formData.name}
                                             onChange={handleChange}
-                                            className="block w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0CC1E0]/20 focus:border-[#0CC1E0] transition-all"
+                                            className="block w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#6366F1]/20 focus:border-[#6366F1] transition-all"
                                         />
                                     </div>
 
@@ -121,7 +121,7 @@ const BuyersWaitlist: React.FC = () => {
                                             placeholder="Work Email"
                                             value={formData.work_email}
                                             onChange={handleChange}
-                                            className="block w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0CC1E0]/20 focus:border-[#0CC1E0] transition-all"
+                                            className="block w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#6366F1]/20 focus:border-[#6366F1] transition-all"
                                         />
                                     </div>
 
@@ -136,7 +136,7 @@ const BuyersWaitlist: React.FC = () => {
                                             placeholder="Company Name"
                                             value={formData.company_name}
                                             onChange={handleChange}
-                                            className="block w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0CC1E0]/20 focus:border-[#0CC1E0] transition-all"
+                                            className="block w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#6366F1]/20 focus:border-[#6366F1] transition-all"
                                         />
                                     </div>
 
@@ -150,7 +150,7 @@ const BuyersWaitlist: React.FC = () => {
                                             placeholder="Phone Number (Optional)"
                                             value={formData.phone}
                                             onChange={handleChange}
-                                            className="block w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0CC1E0]/20 focus:border-[#0CC1E0] transition-all"
+                                            className="block w-full pl-11 pr-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#6366F1]/20 focus:border-[#6366F1] transition-all"
                                         />
                                     </div>
                                 </div>
@@ -158,7 +158,7 @@ const BuyersWaitlist: React.FC = () => {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="w-full py-4 bg-[#0CC1E0] text-white rounded-xl font-bold text-lg flex items-center justify-center gap-2 hover:bg-[#0AAFCB] transition-all active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed shadow-lg shadow-[#0CC1E0]/20"
+                                    className="w-full py-4 bg-[#6366F1] text-white rounded-xl font-bold text-lg flex items-center justify-center gap-2 hover:bg-[#4F46E5] transition-all active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed shadow-lg shadow-[#6366F1]/20"
                                 >
                                     {isSubmitting ? (
                                         <div className="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin" />
